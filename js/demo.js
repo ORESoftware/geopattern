@@ -61,7 +61,8 @@ function prepareDownload(string, pattern) {
 }
 
 var changeEvent = onChange($('#string'), function (val) {
-	var pattern = GeoPattern.generate(val);
+	var pattern = GeoPattern.generate(val, {color: "#3d5ea6", baseColor: "#727272");
+	
 
 	var bg = next();
 	$('#bg-' + bg.next)

@@ -63,7 +63,6 @@ function prepareDownload(string, pattern) {
 var changeEvent = onChange($('#string'), function (val) {
 	var pattern = GeoPattern.generate(val, {baseColor: "#3d5ea6"});
 	
-
 	var bg = next();
 	$('#bg-' + bg.next)
 		.css('background-image', pattern.toDataUrl())
